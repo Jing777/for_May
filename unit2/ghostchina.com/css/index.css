@@ -1,0 +1,229 @@
+/*标签选择器，选中所有标签*/
+body,ul,p{
+    margin: 0;
+    padding: 0;
+}
+/*类选择器*/
+.container{
+    width: 100%;
+    /*height: 400px;*/
+    background: #EBEBEB;
+}
+/*header begin-------------------*/
+.header{
+
+}
+.header .logo{
+    width: 100%;
+    height: 222px;
+    background-image: url("../images/logo.jpg");
+    background-position-y: -130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header .nav{
+    width: 100%;
+    height: 58px;
+    background: #FFFFFF;
+}
+.header .nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.header .nav ul li{
+    width: 70px;
+    height: 58px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: small;
+    /*文本居中*/
+    text-align: center;
+    /*垂直居中*/
+    line-height: 60px;
+}
+.header .nav ul li:first-child{
+    border-bottom: solid 2px #E67E22;
+}
+.header .nav ul li a{
+    /*超链接下划线*/
+    text-decoration: none;
+    color: #505050;
+}
+.header .nav ul li:hover a{
+    color: #E67E22;
+}
+/*header end----------------------*/
+
+/*
+     pc:    970<普通屏<1170<高清屏
+     pad:   750-970
+     phone: <750
+*/
+
+/*main begin-----------------------*/
+.main{
+    width: 1142px;
+    padding-top: 37px;
+    /*居中*/
+    margin: auto;
+    /*写在父容器中*/
+    /*设置div排列方式*/
+    display: flex;
+    /*排列方向*/
+    flex-direction: row;
+    /*对齐方向:center,flex-start,flex-end,space-arrond,space-between*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main .main-left{
+    width: 750px;
+}
+/*文章布局*/
+.main .main-left .article{
+    width: 680px;
+    padding: 35px;
+    background: white;
+    margin-bottom: 30px;
+}
+/*文章标题*/
+.main .main-left .article .post-head .post-title{
+    text-align: center;
+    font-size: 26pt;
+    margin: 0;
+}
+/*文章作者日期信息栏*/
+.main .main-left .article .post-head .post-meta{
+    font-size: x-small;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: grey;
+}
+/*作者名标色*/
+.main .main-left .article .post-meta .author{
+    color: #E67E22;
+}
+/*正文预览*/
+.main .main-left .article .post-content{
+    font-size: large;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: #444443;
+}
+/*阅读全文*/
+.main .main-left .article .post-textlink{
+    height: 36px;
+    font-size: small;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*阅读全文按钮*/
+.main .main-left .article .post-textlink div{
+    width: 85px;
+    line-height: 36px;
+    font-size: small;
+    background: #E67E22;
+    text-align: center;
+}
+/*阅读全文链接*/
+.main .main-left .article .post-textlink div a{
+    width: 100%;
+    color: white;
+    /*扩大a标签选区*/
+    display: inline-block;
+    text-decoration: none;
+}
+/*hover变色*/
+.main .main-left .article .post-textlink div:hover{
+    background: black;
+}
+/*文章footer*/
+.main .main-left .article .post-footer{
+    height: 50px;
+    padding-top: 5px;
+}
+/*线*/
+.main .main-left .article .post-footer .line{
+    height: 1px;
+    width: 100%;
+    background: #EBEBEB;
+}
+/*图标*/
+.main .main-left .article .post-footer .icon{
+    margin-top: 27px;
+}
+.main .main-right{
+    width: 362px;
+    height: 350px;
+    background: white;
+}
+/*main end-------------------------*/
+
+/*footer begin-------------------*/
+.footer{
+    width: 100%;
+    height: 374px;
+    background: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+.footer .footer-inner{
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 64, 252, 0.42);
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+.footer .footer-inner .line-seperate-long{
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+.footer .footer-inner .line-seperate-short{
+    width: 30%;
+    height: 1px;
+    background: #E67E22;
+    margin-top: -1px;
+}
+.footer .footer-inner ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.footer .footer-inner ul li{
+    font-size: 14px;
+    padding: 5px;
+    margin-right: 3px;
+}
+.footer .footer-inner ul li:hover{
+    background: #E67E22;
+}
+
+@media screen and (max-width: 750px) {
+    .footer .footer-inner{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 970px) {
+
+}
+/*footer end---------------------*/
+/*选中header里的两个div*/
+/*空格选中所有子元素*/
+/*逗号选中并列两个，和*/
+/*大于号选中直接子元素*/
