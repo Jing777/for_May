@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">Log in with</div>
+            <div class="img-container">
+                <div class="div-img"><a href=""><img src="../icons/login-github.png" alt="">GitHub</a></div>
+                <div class="div-img"><a href=""><img src="../icons/login-bitbucket.png" alt="">BitBucket</a></div>
+                <div class="div-img"><a href=""><img src="../icons/login-google.png" alt="">Google</a></div>
+                <div class="div-img"><a href=""><img src="../icons/login-facebook.png" alt="">Facebook</a></div>
+            </div>
+            <div class="line-seperate"></div>
+            <div class="or-seperate">OR</div>
+            <div class="div-form">
+                <!--提交表单事件：表单 提交 触发表单的提交行为-->
+                <form action="../index.html" id="login_form" onsubmit="return checklogin()">
+                    <input type="email" class="text" id="txtEmail" placeholder="email" required>
+                    <div class="form-alert"><p id="email_alert"></p></div>
+                    <input type="password" class="text" id="txtPassword" placeholder="password" minlength="6" required>
+                    <div class="form-alert"><p id="password_alert"></p></div>
+                    <input type="button" id="btn_login" class="button" value="Log in">
+                    <a href="#">Forgot your password?</a>
+                </form>
+            </div>
+            <div class="sign-up">
+                <p>Don't have an account? </p>
+                <p><a href="#">Sign up</a></p>
+            </div>
+            <div class="line-seperate-long"></div>
+            <div class="copyright">© Copyright 2017, D2C. All rights reserved.</div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

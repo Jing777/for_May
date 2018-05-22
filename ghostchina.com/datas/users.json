@@ -1,0 +1,8 @@
+[
+  {"userId":"admin@163.com","userPassword":"666666","userIcon":"./images/admin.png","userPhone":"13812790420","nickName":"Admin"},
+  {"userId":"lzhan@163.com","userPassword":"123456","userIcon":"./images/lzhan.png","userPhone":"13812790421","nickName":"Lzhan"},
+  {"userId":"jack@163.com","userPassword":"567890","userIcon":"./images/jack.png","userPhone":"13812790423","nickName":"Jack"},
+  {"userId":"rose@163.com","userPassword":"123123","userIcon":"./images/rose.png","userPhone":"13812790424","nickName":"Rose"},
+  {"userId":"tony@163.com","userPassword":"345345","userIcon":"./images/tony.png","userPhone":"13812790543","nickName":"Tony"},
+  {"userId":"james@163.com","userPassword":"888888","userIcon":"./images/james.png","userPhone":"13812790678","nickName":"James"}
+]
